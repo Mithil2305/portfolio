@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #0a192f;
+	font-family: "Montserrat";
+	color: #d9d9d9;
+}
+html {
+	transition: all ease 0.2s;
+	scroll-behavior: smooth;
+}
+
+hr {
+	width: 350px;
+	margin-top: -15px;
+	display: none;
+	margin-left: 100px;
+}
+
+nav ul {
+	display: flex;
+	gap: 5rem;
+	list-style: none;
+	justify-content: flex-end;
+	margin-top: 50px;
+	margin-right: 200px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #64ffda;
+	font-family: "Courier Prime";
+	font-weight: 500;
+}
+nav li:hover {
+	scale: 1.1;
+}
+.typing::after {
+	content: "";
+	animation: blink-caret 0.8s steps(1) infinite;
+}
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+@keyframes blink-caret {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: black;
+	}
+}
+
+.resume-btn {
+	font-family: "Courier Prime";
+	font-size: 17px;
+	letter-spacing: 1px;
+	padding: 10px 25px;
+	background-color: #00000000;
+	color: #64ffda;
+	border: 1px solid #64ffda;
+}
+
+.resume-btn:hover {
+	background-color: #64ffda;
+	color: #0a192f;
+	scale: 1.08;
+	transition: all 0.2s ease;
+	cursor: pointer;
+}
+.resume-btn:active {
+	scale: 0.98;
+}
+.home {
+	height: 100vh;
+}
+.home-cont {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 25em;
+	overflow: hidden;
+	margin-top: 300px;
+}
+.home-cont h1 {
+	font-size: 60px;
+	font-weight: 900;
+}
+
+button {
+	margin-top: 15px;
+}
+.abt-cont {
+	display: flex;
+	justify-content: space-evenly;
+	height: 50vh;
+}
+
+.skill-cont,
+.certifications {
+	display: flex;
+	margin-left: 350px;
+}
+
+.skill-cont ul,
+.certifications ul {
+	font-family: "Montserrat";
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 43px;
+	margin-top: 100px;
+	color: #d9d9d9;
+}
+
+.education {
+	margin-left: 350px;
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.education .title {
+	margin-bottom: 60px;
+}
+
+.education ul {
+	line-height: 43px;
+	margin-left: 50px;
+}
+
+.education h3 {
+	margin-bottom: 10px;
+}
+.edu-cont {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	margin-left: 100px;
+}
+
+.seminar {
+	text-align: center;
+	height: 50vh;
+}
+.seminar .title {
+	margin-bottom: 60px;
+}
+
+.seminar ul {
+	line-height: 43px;
+}
+
+.contact form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+.submit,
+textarea {
+	margin: 10px;
+	width: 350px;
+	padding: 7px 10px;
+	font-family: "Montserrat";
+}
+.contact .title {
+	text-align: center;
+}
+
+.contact {
+	height: 70vh;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.submit {
+	background-color: #163769;
+	color: #ffffff;
+
+	font-weight: 800;
+	border: none;
+	border-radius: 5px;
+}
+.submit:hover {
+	background-color: #092b5a;
+	transition: all 0.2s ease;
+}
+textarea {
+	resize: none;
+	height: 100px;
+}
+
+input[type="text"]:active,
+input[type="email"]:active,
+input[type="number"]:active,
+.submit:active,
+textarea:active {
+	border: none;
+}
+
+input:focus,
+textarea {
+	outline: none;
+}
+
+.submit:active {
+	scale: 0.95;
+	transition: all 0.2s ease;
+}
